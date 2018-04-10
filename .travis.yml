@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.5-travis"
+  - "3.5-master"
 install:
   - pip install -r requirments.txt
 script:
