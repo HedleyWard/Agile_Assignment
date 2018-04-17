@@ -10,3 +10,4 @@ for filename in glob.iglob('**/*.json', recursive=True):
             line.replace(".", " ")
      f = open(filename , "w")
      f.write(data)
+     
