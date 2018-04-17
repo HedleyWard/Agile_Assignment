@@ -1,0 +1,9 @@
+jobs:
+- name: JSONCleanerLine
+  plan:
+  - task: clean-json
+    config:
+      platform: darwin
+      run:
+        path: python
+        args: ["./JSONCleanerLine.py"]
