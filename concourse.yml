@@ -1,8 +1,6 @@
 ---
 platform: linux
 
-
-
 resources:
 - name: jsoncleaner_repo_dockerfile
   type: git
@@ -18,9 +16,12 @@ resources:
     email: alexincork91@gmail.com
     username: yawlhead91
     password: bigdog91
+
+    
     
 jobs:
 - name: jsoncleanerline_job
+  public: true
   plan:
   - get: jsoncleaner_repo_dockerfile
     trigger: true
