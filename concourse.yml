@@ -1,6 +1,8 @@
 ---
 platform: linux
 
+
+
 resources:
 - name: jsoncleaner_repo_dockerfile
   type: git
@@ -23,7 +25,7 @@ jobs:
   - get: jsoncleaner_repo_dockerfile
     trigger: true
   - put: jsoncleaner_build_image
-    params: { build: jsoncleaner_repo_dockerfile }
+    params: { build: jsoncleaner_repo_dockerfile, run:  }
 
 
 
