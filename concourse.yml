@@ -13,9 +13,9 @@ resources:
   type: docker-image
   source:
     repository: yawlhead91/agile_concourse_test
-    email: alexincork91@gmail.com
-    username: yawlhead91
-    password: bigdog91
+    email: ((usremail))
+    username: ((usrname))
+    password: ((usrpwd))
 
     
     
