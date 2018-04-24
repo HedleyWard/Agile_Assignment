@@ -1,5 +1,5 @@
 ---
-platform: linux
+platform: darwin
 
 resources:
 - name: jsoncleaner_repo_dockerfile
@@ -13,20 +13,22 @@ resources:
   type: docker-image
   source:
     repository: yawlhead91/agile_concourse_test
-    email: ((usremail))
-    username: ((usrname))
-    password: ((usrpwd))
+    email: alexincork91@gmail.com
+    username: yawlhead91
+    password: bigdog91
 
     
     
 jobs:
-- name: jsoncleanerline_job
+- name: jsoncleanerline_job2
+
   public: true
   plan:
   - get: jsoncleaner_repo_dockerfile
     trigger: true
   - put: jsoncleaner_build_image
     params: { build: jsoncleaner_repo_dockerfile, run:  }
+
 
 
 
